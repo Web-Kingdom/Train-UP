@@ -1,0 +1,211 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:white;
+    font-family:'Orbitron',sans-serif;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+    border-bottom:2px solid #660000;
+    box-shadow:0 0 15px #660000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:900;
+    color:#aa2222;
+
+    text-shadow:
+    0 0 10px #aa2222,
+    0 0 20px #660000;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:white;
+    background:#660000;
+    padding:12px 20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#aa2222;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+/* STAGE + DIFFICULTY */
+
+.top-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:24px;
+}
+
+.stage{
+    color:#ff4444;
+}
+
+.difficulty{
+    color:#ff9999;
+}
+
+/* TIMER */
+
+.timer{
+    text-align:center;
+    font-size:40px;
+    color:#ff6666;
+    margin-bottom:25px;
+}
+
+/* QUESTION */
+
+.question{
+    text-align:center;
+    font-size:85px;
+    font-weight:900;
+
+    min-height:120px;
+
+    color:#ff3333;
+
+    text-shadow:
+    0 0 10px #660000,
+    0 0 25px #660000;
+}
+
+/* INPUT */
+
+.answer-area{
+    text-align:center;
+}
+
+input{
+    width:250px;
+    padding:15px;
+
+    text-align:center;
+
+    font-size:34px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:#111;
+
+    color:white;
+
+    border:2px solid #660000;
+
+    font-family:'Orbitron',sans-serif;
+}
+
+input:focus{
+    box-shadow:0 0 15px #aa2222;
+}
+
+/* INFO */
+
+.info{
+    text-align:center;
+    margin-top:20px;
+    color:#888;
+}
+
+/* STATUS BALL */
+
+.status-ball{
+
+    position:fixed;
+
+    right:80px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    background:gray;
+
+    box-shadow:0 0 20px gray;
+
+    transition:.3s;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .back-btn{
+        font-size:14px;
+        padding:8px 12px;
+    }
+
+    .top-info{
+        font-size:16px;
+    }
+
+    .timer{
+        font-size:28px;
+    }
+
+    .question{
+        font-size:48px;
+        min-height:80px;
+    }
+
+    input{
+        width:180px;
+        font-size:24px;
+    }
+
+    .status-ball{
+        width:45px;
+        height:45px;
+        right:15px;
+    }
+}
