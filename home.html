@@ -25,28 +25,15 @@
     /* HEADER */
 
     header{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:15px;
-      padding:30px;
-      border-bottom:2px solid #aa2222;
-      box-shadow:0 0 15px #660000;
-    }
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
 
-    .logo{
-      width:160px;
-      height:auto;
-      position:relative;
-      left:-100px;
-    }
-
-    header h1{
-      font-size:80px;
-      font-family:'Orbitron', sans-serif;
-      color:#4d0000;
-
-      text-shadow:
+.logo{
+    width:160px;
+}
         0 0 5px #ff0000,
         0 0 8px #ff0000,
         0 0 20px #ff0000;
@@ -67,15 +54,16 @@
     /* GAMES */
 
     .games{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:30px;
-      padding:40px;
-    }
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    gap:30px;
+    padding:40px;
+}
 
     .game-link{
-    display:inline-block;
+    display:flex;
     text-decoration:none;
     color:inherit;
 }
